@@ -6,7 +6,7 @@
    Review Assignment
    
    Author: Steven Thompson & James Allen
-   Date:  Nov 6, 2018   
+   Date:  Nov 6, 2018  
    
    Filename: tf_print2.css
 
@@ -19,11 +19,14 @@
 
 /* Hidden Objects */
 
-
+    
 
 /* Page Box Styles */
 
-
+@page {
+    size: 8.5in 11in;
+    margin: 0.5in;
+}
 
 /* Header Styles */
 

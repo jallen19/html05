@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 1
+   
+   Author:   Steven Thompson & James Allen
+   Date:     November 7, 2018
+   
+   Filename: gp_layout.css
+
+   This file contains the layout styles and media
+   queries used with sample pages from the Golden
+   Pulps website.
+   
+   Cross-Browser flexboxes:
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+
+*/
+
+
+/* Import Basic Design Styles Used on All Screens */
+
+@import url("gp_designs.css");
+
+/* Flex Layout Styles */
+    body{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        -webkit-box-flow: row wrap;
+        -moz-box-flow: row wrap;
+        -ms-flexbox: row wrap;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+    
+    section#sheet{
+        -webkit-box-flex: 3 1 301px;
+        -moz-box-flex: 3 1 301px;
+        -ms-flexbox: 3 1 301px;
+        -webkit-flex: 3 1 301px;
+        flex: 3 1 301px;
+    }
+    
+    article{
+        -webkit-box-flex: 1 3 180px;
+        -moz-box-flex: 1 3 180px;
+        -ms-flexbox: 1 3 180px;
+        -webkit-flex: 1 3 180px;
+        flex: 1 3 180px;
+    }
+    
+    
+
+/* ============================================
+	Mobile Devices: 0 - 480 pixels
+   ============================================
+*/
+
+
+
+
+/* ===================================================
+	Tablet and Desktop Devices: Greater than 480 pixels
+   ===================================================
+*/
+

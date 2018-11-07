@@ -122,19 +122,19 @@
         flex: 1 1 auto;
     }
     
-    .size1 img{
+    img[class^="panel size1"]{
         width: 100%
     }
     
-    .size2 img{
+    img[class^="panel size2"]{
         width: 60%;
     }
     
-    .size3 img{
+    img[class^="panel size3"]{
         width: 40%;
     }
     
-    .size4 img{
+    img[class^="panel size4"]{
         width: 30%;
     }
 }

@@ -33,19 +33,19 @@
         margin-right: auto;
     }
     
-    .size1 img {
+   img[class^="panel size1"]{
         width: 5in;
     }
     
-    .size2 img {
+    img[class^="panel size2"]{
         width: 3in;
     }
     
-    .size3 img {
+    img[class^="panel size3"]{
         width: 2in;
     }
     
-    .size4 img {
+    img[class^="panel size4"]{
         width: 1.5in;
     }
 

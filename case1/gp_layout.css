@@ -14,12 +14,12 @@
    queries used with sample pages from the Golden
    Pulps website.
    
-   Cross-Browser flexboxes:
-   display: -webkit-box;
-   display: -moz-box;
-   display: -ms-flexbox;
-   display: -webkit-flex;
-   display: flex;
+   Cross-Browser extensions:
+    -webkit-box
+    -moz-box
+    -ms-flexbox
+    -webkit-flex
+    flex
 
 */
 
@@ -66,6 +66,28 @@
    ============================================
 */
 
+@media only screen and (max-width: 480px){
+    
+    .panel img{
+        width: 100%;
+    }
+    
+    .horizontal {
+        -webkit-box-order: 99;
+        -moz-box-order: 99;
+        -ms-order: 99;
+        -webkit-order: 99;
+        order: 99;
+    }
+    
+    body > footer{
+        -webkit-box-order: 100;
+        -moz-box-order: 100;
+        -ms-order: 100;
+        -webkit-order: 100;
+        order: 100;
+    }
+}
 
 
 
@@ -73,4 +95,47 @@
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
 */
+
+@media only screen and (min-width: 481px){
+    .horizontal ul{
+        
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-flow: row nowrap;
+        -moz-box-flow: row nowrap;
+        -ms-flexbox: row nowrap;
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        
+        height: 40px;
+        
+    }
+    
+    .horizontal ul li{
+        -webkit-box: 1 1 auto;
+        -moz-box: 1 1 auto;
+        -ms-flexbox: 1 1 auto;
+        -webkit-flex: 1 1 auto;
+        flex: 1 1 auto;
+    }
+    
+    .size1 img{
+        width: 100%
+    }
+    
+    .size2 img{
+        width: 60%;
+    }
+    
+    .size3 img{
+        width: 40%;
+    }
+    
+    .size4 img{
+        width: 30%;
+    }
+}
 

@@ -16,26 +16,59 @@
 */
             /* background styles */
     html{
-        background: url("jb_back1.png") 100%/cover no-repeat;
+        background: url("jb_back2.png") 100%/cover no-repeat;
     }
     
-    body > header nav#horizontal{
-        background: url("jb_logo.png") 100%/cover no-repeat;
+    body {
+        background-color: white;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        float: none;
+        position: relative;
+        max-width: 800px;
+        min-width: 600px;
+        height: 100%;
+        
+    }
+    
+    body > header > img{
+        width: 100%;
     }
     
             /* horizontal nav styles */
+    
     body header nav#horizontal{
-        width: 100%;
         display: block;
     }
+    
     body header nav#horizontal li{
-        width: 15%;
+        width: 16.66%;
         float: left;
     }
-    body header nav#horizontal:after{
-        clear: both;
-        content:"";
-        display: table;
+    
+    body aside#services{
+        width: 20%;
+        float: left;
+        margin-right: 2%;
     }
+    body section#description{
+        width: 52%;
+        float: left;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    
+    body aside#slang{
+        width: 20%;
+        float: right;
+        margin-left: 2%;
+    }
+    
+        /* Aside services styles */
+            
+    
+    
 
 

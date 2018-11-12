@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 4
+   
+   Author:   Steven Thompson & James Allen
+   Date:    November 12, 2018
+   
+   Filename: jb_styles.css
+
+   This file contains the screen styles used with the 
+   Jersey Buoys home page
+
+*/
+            /* background styles */
+    html{
+        background: url("jb_back1.png") 100%/cover no-repeat;
+    }
+    
+    body > header nav#horizontal{
+        background: url("jb_logo.png") 100%/cover no-repeat;
+    }
+    
+            /* horizontal nav styles */
+    body header nav#horizontal{
+        width: 100%;
+        display: block;
+    }
+    body header nav#horizontal li{
+        width: 15%;
+        float: left;
+    }
+    body header nav#horizontal:after{
+        clear: both;
+        content:"";
+        display: table;
+    }
+
+

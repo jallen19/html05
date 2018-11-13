@@ -42,6 +42,25 @@
         -webkit-flex-flow: row wrap;
         flex-flow: row wrap;
     }
+    body header img#logo{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        -webkit-box-flow: row wrap;
+        -moz-box-flow: row wrap;
+        -ms-flexbox: row wrap;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        
+        -webkit-box-flex: 1 3 301px;
+        -moz-box-flex: 1 3 301px;
+        -ms-flexbox: 1 3 301px;
+        -webkit-flex: 1 3 301px;
+        flex: 1 3 301px;
+    }
     
     section#sheet{
         -webkit-box-flex: 3 1 301px;

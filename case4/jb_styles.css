@@ -19,40 +19,52 @@
         background: url("jb_back2.png") 100%/cover no-repeat;
     }
     
+            /* flex layout styles */
+    
     body {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        -webkit-box-flow: row wrap;
+        -moz-box-flow: row wrap;
+        -ms-flexbox: row wrap;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        
+        display: block;
         background-color: white;
-        margin-bottom: auto;
         margin-left: auto;
         margin-right: auto;
         width: 90%;
-        float: none;
-        position: relative;
-        max-width: 800px;
-        min-width: 600px;
-        height: 100%;
-        
+        max-width: 800px;    
     }
     
-    body > header > img{
-        width: 100%;
+    body:after{
+        clear: both;
+        content:"";
+        display: table;
     }
-    
+
+    body header img#logo{
+        width: 60%;
+        padding-left: 20%;
+    }
+            /* ul styles */
+            
+    ul{
+        list-style-type: none;
+    }
             /* horizontal nav styles */
-    
-    body header nav#horizontal{
-        display: block;
-    }
-    
-    body header nav#horizontal li{
-        width: 16.66%;
-        float: left;
-    }
     
     body aside#services{
         width: 20%;
         float: left;
         margin-right: 2%;
     }
+    
     body section#description{
         width: 52%;
         float: left;
@@ -65,6 +77,72 @@
         float: right;
         margin-left: 2%;
     }
+    
+    body aside#slang h1{
+        text-align: center;
+    }
+    
+    body aside#slang ul{
+        padding-right: 15px;
+    }
+    
+    body aside#slang ul p{
+        text-align: center;
+    }
+    
+@media only screen and (max-width: 480px){
+    
+    body footer{
+        order: 100;
+    }
+    
+    
+    
+    nav#horizontal ul{
+        display:none;
+    }
+    
+    a#navicon{
+        display: block;
+    }
+    
+    a#navicon:hover+ul, nav#horizontal ul:hover{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 481px){
+    
+    a#navicon{
+        display: none;
+    }
+    
+        
+    body nav#horizontal ul{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        -webkit-box-flow: row nowrap;
+        -moz-box-flow: row nowrap;
+        -ms-flexbox: row nowrap;
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;   
+        height: 40px;
+        
+    }
+    
+    body nav#horizontal ul li{
+        -webkit-box: 1 1 auto;
+        -moz-box: 1 1 auto;
+        -ms-flexbox: 1 1 auto;
+        -webkit-flex: 1 1 auto;
+        flex: 1 1 auto;
+    }
+    
+}
     
         /* Aside services styles */
             

@@ -92,6 +92,10 @@ nav.horizontal ul {
         order: 100;
     }
     
+    nav.horizontal ul{
+        display: none;
+    }
+    
     a#navicon{
         display: block;
     }

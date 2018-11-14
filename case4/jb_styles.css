@@ -19,7 +19,7 @@
         background: url("jb_back2.png") 100%/cover no-repeat;
     }
     
-            /* flex layout styles */
+            /* body flex layout styles */
     
     body {
         display: -webkit-box;
@@ -60,6 +60,7 @@
             /* horizontal nav styles */
             
     aside#services{
+        
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
@@ -72,11 +73,16 @@
         -webkit-flex-flow: column wrap;
         flex-flow: column wrap;
         
-        -webkit-box: 1 5 auto;
-        -moz-box: 1 5 auto;
-        -ms-flexbox: 1 5 auto;
-        -webkit-flex: 1 5 auto;
-        flex: 1 5 auto;
+        -webkit-box: 1 4 100px;
+        -moz-box: 1 4 100px;
+        -ms-flexbox: 1 4 100px;
+        -webkit-flex: 1 4 100px;
+        flex: 1 4 100px;
+        
+        -webkit-align-items: center;
+        align-items: center;
+        float: left;
+        
     }
     
     /*body aside#services{
@@ -92,17 +98,45 @@
         display: -webkit-flex;
         display: flex;
         
+        -webkit-box-flow: row wrap;
+        -moz-box-flow: row wrap;
+        -ms-flexbox: row wrap;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        
+        -webkit-box: 2 4 100px;
+        -moz-box: 2 4 100px;
+        -ms-flexbox: 2 4 100px;
+        -webkit-flex: 2 4 100px;
+        flex: 2 4 100px;
+        
+        -webkit-align-items: center;
+        align-items: center;
+        
+    }
+    
+    aside#slang{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
         -webkit-box-flow: column wrap;
         -moz-box-flow: column wrap;
         -ms-flexbox: column wrap;
         -webkit-flex-flow: column wrap;
         flex-flow: column wrap;
         
-        -webkit-box: 1 4 auto;
-        -moz-box: 1 4 auto;
-        -ms-flexbox: 1 4 auto;
-        -webkit-flex: 1 4 auto;
-        flex: 1 4 auto;
+        -webkit-box: 1 4 100px;
+        -moz-box: 1 4 100px;
+        -ms-flexbox: 1 4 100px;
+        -webkit-flex: 1 4 100px;
+        flex: 1 4 100px;
+        
+        -webkit-align-items: center;
+        align-items: center;
+        float: right;
     }
     
     /*body section#description{
@@ -112,31 +146,13 @@
         margin-left: 2%;
     }*/
     
-    body aside#slang{
-        width: 20%;
-        float: right;
-        margin-left: 2%;
-    }
     
-    body aside#slang h1{
-        text-align: center;
-    }
-    
-    body aside#slang ul{
-        padding-right: 15px;
-    }
-    
-    body aside#slang ul p{
-        text-align: center;
-    }
     
 @media only screen and (max-width: 480px){
     
     body footer{
         order: 100;
     }
-    
-    
     
     nav#horizontal ul{
         display:none;
@@ -149,6 +165,10 @@
     a#navicon:hover+ul, nav#horizontal ul:hover{
         display: block;
     }
+    
+    aside#slang, aside#services{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 481px){
@@ -157,7 +177,6 @@
         display: none;
     }
     
-        
     body nav#horizontal ul{
         display: -webkit-box;
         display: -moz-box;
@@ -182,11 +201,34 @@
         flex: 1 1 auto;
     }
     
+    body aside#slang{
+        width: 20%;
+        float: right;
+        margin-left: 2%;
+    }
+    
+    body aside#slang h1{
+        text-align: center;
+    }
+    
+    body aside#services h1{
+        text-align: center;
+    }
+    
+    body aside#services ul{
+        padding-right: 15px;
+    }
+    
+    body aside#slang ul{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    body aside#slang ul p{
+        text-align: center;
+    }
+    
 }
-    
-        /* Aside services styles */
-            
-    
     
 
 
